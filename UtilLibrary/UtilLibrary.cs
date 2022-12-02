@@ -15,8 +15,4 @@ public class AoCUtils
             return "";
         }
     }
-
-    public static string[] tokenize(string input, string delimiter) {
-        return input.Split(delimiter);
-    }
 }

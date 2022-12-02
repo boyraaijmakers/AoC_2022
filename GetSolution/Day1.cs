@@ -1,19 +1,17 @@
 namespace Days;
 
-using UtilLibrary;
 using DaySetup;
 
 public class Day1 : Day
 {
     private int[] getSums(string input) {
-        return AoCUtils.tokenize(input, "\n\n").Select(
-            item => AoCUtils.tokenize(item, "\n").Select(
+        return input.Split("\n\n").Select(
+            item => item.Split("\n").Select(
                 item => int.Parse(item)
             ).Aggregate(
                 0, (acc, x) => acc + x
             )
         ).ToArray();
-
     }
 
     public override string part1(string input) {
