@@ -5,7 +5,7 @@ using DaySetup;
 class GetSolution {
 
     static Day[] days = {
-        new Day1(), new Day2()
+        new Day1(), new Day2(), new Day3()
     };
 
     static void Main(string[] args) {
