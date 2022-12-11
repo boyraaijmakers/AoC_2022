@@ -15,4 +15,19 @@ public class AoCUtils
             return "";
         }
     }
+
+    private static long Gfc(long a, long b) {
+        while (b != 0)
+        {
+            long temp = b;
+            b = a % b;
+            a = temp;
+        }
+        return a;
+    }
+
+    public static long Lcm(long a, long b) {
+        return (a / Gfc(a, b)) * b;
+    }
+    
 }
